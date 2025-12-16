@@ -133,7 +133,7 @@ python manage.py migrate`
 
 
 
-#To submit
+# To submit
 1. Database diagrams
 2. Backend repository link (GitLab)
 3. Backend domain URL hosted on Render
