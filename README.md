@@ -1,4 +1,5 @@
-# Class activity: SPM 406 Software Developmentweb Development
+# Class activity
+# Fullstack web development
 
 ## Step 1: Database Design
 - Define your database structure using **DBdiagrams**.
@@ -19,11 +20,13 @@
 ## Step 3: Virtual Environment
 - Navigate to your project working directory.
 - Create and activate a Python virtual environment.
-
+`python -m venv venv`
+`source venv/bin/activate`
 ---
 
 ## Step 4: Django Project
 - Create a new **Django project** inside the repository.
+`django-admin startproject name`
 
 ---
 
@@ -41,17 +44,22 @@
 
 ## Step 7: PostgreSQL Driver
 - Install the PostgreSQL database driver for Python.
-
+`pip install psycopg[binary]
+ psql -h localhost -U myuser -d mydb
+`
 ---
 
 ## Step 8: Hosting
 - Host the **PostgreSQL database** and **Django application** on **Render**.
+  https://render.com/
 
 ---
 
 ## Step 9: Environment Variables
 - Add database environment variables to a `.env` file.
 - Install and use **python-dotenv** to load environment variables.
+`pip install python-dotenv
+`
 - Upload the `.env` configuration to the hosting platform.
 
 ---
@@ -63,7 +71,8 @@
 
 ## Step 11: Migrations
 - Run Django migrations to create database tables.
-
+`python manage.py makemigrations
+python manage.py migrate`
 ---
 
 ## Step 12: Data Seeding and API Testing
